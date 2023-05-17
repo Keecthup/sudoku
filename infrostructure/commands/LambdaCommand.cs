@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Sudoku.ViewModels
 {
-    internal class LambdaCommand : Nachat_igru
+    internal class LambdaCommand : Comands
     {
         public LambdaCommand(Action<object?> Execute, Func<object?, bool> CanExecute) 
         {

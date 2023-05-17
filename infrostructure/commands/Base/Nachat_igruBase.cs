@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace Sudoku.infrostructure.commands.Base
 {
-    internal abstract class Nachat_igruBase
+    internal abstract class CommandBase
     {
         public event EventHandler CanExecuteChanged
         {

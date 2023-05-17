@@ -29,8 +29,12 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Играть" HorizontalAlignment="Left" Margin="236,444,0,0" VerticalAlignment="Top" Height="68" Width="185" Command="{Binding PlayCommand}" />
+        <Button Content="Играть" HorizontalAlignment="Left" Margin="236,454,0,0" VerticalAlignment="Top" Height="68" Width="185" Command="{Binding PlayCommand}" />
 
     </Grid>
-    
+    <Window.Resources>
+        <DataTemplate x:Key="DataTemplateLVL2">
+            <Button Content="lol"  Command="{Binding ClosApplicationCommand}" />
+        </DataTemplate>
+    </Window.Resources>
 </Window>

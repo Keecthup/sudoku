@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace sudoku.ViewModels.basa
 {
-    internal abstract class ViewModel : INotifyPropertyChanged
+    public class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string? PropertyName = null)

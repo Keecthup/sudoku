@@ -17,7 +17,7 @@
             <RowDefinition/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Viewbox Grid.Column="0" Grid.Row="0" Stretch="Uniform">
+        <ItemsControl Grid.Row="2" ItemsSource="{Binding Board}" AlternationCount="64" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Grid x:Name="SudokuGrid" Width="100" Height="100">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
@@ -42,11 +42,11 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
             </Grid>
-        </Viewbox>
+        </ItemsControl>
         <StackPanel Grid.Column="2" Grid.Row="0" VerticalAlignment="Top" Margin="10, 20">
             <Button Content="Играть" 
                     Margin="10"
-                    Click="NewGame"/>
+                    Command="{Binding NewGame}"/>
         </StackPanel>
         
     </Grid>
